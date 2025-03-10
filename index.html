@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kamil Albrycht - CV</title>
+    <style>
+      /* Base styles */
+      :root {
+        --primary: #0a66c2;
+        --secondary: #434343;
+        --light: #f8f9fa;
+        --dark: #212529;
+        --gray: #6c757d;
+        --light-gray: #e9ecef;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      p {
+        margin-bottom: 15px;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: var(--dark);
+        background-color: var(--light);
+        padding: 0;
+        margin: 0;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 20px;
+        background-color: white;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Header styles */
+      header {
+        background-color: var(--primary);
+        color: white;
+        padding: 40px 0;
+        text-align: center;
+      }
+
+      .profile-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .profile-name {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+      }
+
+      .profile-title {
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin-bottom: 20px;
+      }
+
+      .contact-details {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 15px;
+      }
+
+      .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .contact-item a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .contact-item a:hover {
+        text-decoration: underline;
+      }
+
+      /* Section styles */
+      section {
+        padding: 30px;
+      }
+
+      .section-title {
+        color: var(--primary);
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        font-weight: 600;
+        border-bottom: 2px solid var(--primary);
+        padding-bottom: 10px;
+      }
+
+      /* Skills */
+      .skills-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+      }
+
+      .skill-category {
+        margin-bottom: 15px;
+      }
+
+      .skill-title {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .skill-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .skill-item {
+        background-color: var(--light-gray);
+        padding: 5px 10px;
+        border-radius: 15px;
+        font-size: 0.9rem;
+      }
+
+      /* Experience */
+      .experience-item {
+        margin-bottom: 25px;
+      }
+
+      .job-title {
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: var(--dark);
+      }
+
+      .company {
+        font-weight: 500;
+        color: var(--primary);
+      }
+
+      .job-period {
+        color: var(--gray);
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+      }
+
+      .job-description ul {
+        list-style-type: square;
+        padding-left: 20px;
+      }
+
+      .job-description li {
+        margin-bottom: 5px;
+      }
+
+      /* Education */
+      .education-item {
+        margin-bottom: 15px;
+      }
+
+      .degree {
+        font-weight: 600;
+      }
+
+      .institution {
+        color: var(--primary);
+      }
+
+      .education-period {
+        color: var(--gray);
+        font-size: 0.9rem;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .skills-container {
+          grid-template-columns: 1fr;
+        }
+
+        .profile-name {
+          font-size: 2rem;
+        }
+
+        .profile-title {
+          font-size: 1.2rem;
+        }
+
+        .contact-details {
+          flex-direction: column;
+          gap: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="profile-container">
+          <h1 class="profile-name">KAMIL ALBRYCHT</h1>
+          <h2 class="profile-title">Senior Frontend Developer</h2>
+          <div class="contact-details">
+            <div class="contact-item">
+              <span>🔗</span>
+              <a href="https://uk.linkedin.com/in/kamilalbrycht" target="_blank"
+                >LinkedIn</a
+              >
+            </div>
+            <div class="contact-item">
+              <span>💻</span>
+              <a href="https://github.com/ponciusz" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section id="profile">
+          <h3 class="section-title">PROFILE</h3>
+          <p>
+            I am a proficient and innovative Senior Frontend Developer with
+            extensive experience in React, Next.js, and TypeScript. I excel at
+            transforming conceptual ideas into scalable, performant solutions
+            while ensuring all client requirements are met. My experience
+            includes leading complex CMS migrations and developing custom
+            developer tools that enhance team productivity.
+          </p>
+          <p>
+            With an analytical mind and collaborative approach, I work
+            effectively with cross-functional teams to identify efficiency
+            bottlenecks and implement elegant technical solutions. I focus on
+            creating reusable component libraries, debugging tools, and frontend
+            architectures that seamlessly integrate with various content
+            platforms, ultimately empowering teams and delivering exceptional
+            user experiences.
+          </p>
+        </section>
+
+        <section id="skills">
+          <h3 class="section-title">TECHNICAL SKILLS</h3>
+          <div class="skills-container">
+            <div class="skill-category">
+              <div class="skill-title">Frontend</div>
+              <div class="skill-list">
+                <span class="skill-item">React.js</span>
+                <span class="skill-item">Next.js</span>
+                <span class="skill-item">TypeScript</span>
+                <span class="skill-item">Redux</span>
+                <span class="skill-item">Styled-Components</span>
+                <span class="skill-item">CSS Modules</span>
+                <span class="skill-item">Storybook</span>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <div class="skill-title">Testing</div>
+              <div class="skill-list">
+                <span class="skill-item">Jest</span>
+                <span class="skill-item">Enzyme</span>
+                <span class="skill-item">Cypress.io</span>
+                <span class="skill-item">JEST</span>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <div class="skill-title">Build Tools</div>
+              <div class="skill-list">
+                <span class="skill-item">Webpack</span>
+                <span class="skill-item">GULP</span>
+                <span class="skill-item">CI/CD</span>
+                <span class="skill-item">BitBucket Pipelines</span>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <div class="skill-title">Languages/Frameworks</div>
+              <div class="skill-list">
+                <span class="skill-item">HTML5</span>
+                <span class="skill-item">CSS3</span>
+                <span class="skill-item">SASS</span>
+                <span class="skill-item">ES6</span>
+                <span class="skill-item">Node.js</span>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <div class="skill-title">Other</div>
+              <div class="skill-list">
+                <span class="skill-item">Git</span>
+                <span class="skill-item">JIRA</span>
+                <span class="skill-item">UX</span>
+                <span class="skill-item">DevOps</span>
+                <span class="skill-item">AWS</span>
+                <span class="skill-item">Firebase</span>
+                <span class="skill-item">Amplify</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="experience">
+          <h3 class="section-title">PROFESSIONAL EXPERIENCE</h3>
+
+          <div class="experience-item">
+            <div class="job-title">Lead Frontend Developer</div>
+            <div class="company">VML (formerly Wunderman Thompson)</div>
+            <div class="job-period">Jan 2024 - Present | Remote, Watford</div>
+            <div class="job-description">
+              <ul>
+                <li>
+                  Lead development for Calvin Klein and Tommy Hilfiger websites,
+                  overseeing team performance and code quality
+                </li>
+                <li>
+                  Spearheaded successful migration from CoreMedia CMS to
+                  Contentstack
+                </li>
+                <li>
+                  Developed Chrome Debugger extension for developers, testers,
+                  and content creators
+                </li>
+                <li>
+                  Created Sizeguide table editor tool unifying data across both
+                  brands
+                </li>
+                <li>
+                  Implemented productivity tools and reusable React components
+                  following best practices
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="job-title">Lead Frontend Developer</div>
+            <div class="company">Wunderman Thompson Commerce & Technology</div>
+            <div class="job-period">Aug 2023 - Apr 2024 | Remote, Watford</div>
+            <div class="job-description">
+              <ul>
+                <li>
+                  Managed frontend workflow across multiple projects and
+                  coordinated cross-functional teams
+                </li>
+                <li>Drove architectural decisions and technical planning</li>
+                <li>Strong collaboration with designers and stakeholders</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="job-title">Senior Frontend Developer</div>
+            <div class="company">Wunderman Thompson Commerce & Technology</div>
+            <div class="job-period">Aug 2020 - Aug 2023 | Watford</div>
+            <div class="job-description">
+              <ul>
+                <li>
+                  Delivered high-quality React components for enterprise
+                  e-commerce platforms
+                </li>
+                <li>
+                  Collaborated with designers and backend developers on feature
+                  implementation
+                </li>
+                <li>
+                  Maintained code quality through reviews and standards
+                  enforcement
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="job-title">Senior Frontend Developer</div>
+            <div class="company">SaveWaterSaveMoney</div>
+            <div class="job-period">Jan 2018 - Aug 2020 | Ruislip</div>
+            <div class="job-description">
+              <ul>
+                <li>
+                  Led migration to React.js with Redux, TypeScript, and
+                  Styled-Components
+                </li>
+                <li>
+                  Implemented API microservices and customer-facing integrations
+                </li>
+                <li>
+                  Established testing strategies using JEST and Cypress.io
+                </li>
+                <li>
+                  Facilitated brainstorming sessions to solve complex problems
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="job-title">Frontend Developer</div>
+            <div class="company">UPP b2b</div>
+            <div class="job-period">Jul 2017 - Jan 2018 | Manchester</div>
+            <div class="job-description">
+              <ul>
+                <li>
+                  Optimized workflow with modern Bedrock WP setup and improved
+                  deployment using Jenkins
+                </li>
+                <li>
+                  Implemented modular frontend approach and built custom plugins
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="job-title">Earlier Experience</div>
+            <ul>
+              <li>
+                <strong>Web Developer</strong> | Soap Media - Apr 2016 - Jun
+                2017
+              </li>
+              <li>
+                <strong>Web Developer</strong> | Freiblickdesign - 2013 - 2016
+              </li>
+              <li><strong>Web Developer</strong> | The Ideas - 2010 - 2013</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="education">
+          <h3 class="section-title">EDUCATION</h3>
+
+          <div class="education-item">
+            <div class="degree">
+              Masters in Environmental and Technical Facilities Shaping
+            </div>
+            <div class="institution">Opole University</div>
+            <div class="education-period">2011-2012</div>
+          </div>
+
+          <div class="education-item">
+            <div class="degree">
+              Engineer of Education in Technology and Informatics
+            </div>
+            <div class="institution">Opole University</div>
+            <div class="education-period">2008-2011</div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
